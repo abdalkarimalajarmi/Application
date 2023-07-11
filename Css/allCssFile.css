@@ -1,0 +1,1567 @@
+/* body Counter */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.direction-ltr {
+    direction: ltr;
+}
+
+.direction-rtl {
+    direction: rtl;
+}
+
+.PageContainer {
+    max-width: 1920px;
+    height: 100%;
+}
+
+.container {
+    max-width: 1360px !important;
+}
+
+.disNone {
+    display: none;
+}
+
+.disBlock {
+    display: block;
+}
+
+@font-face {
+    font-family: ArabicUIDisplaySemiBold;
+    src: url(../fonts/Arabe/Arabic_UI_Text/ArabicUIDisplaySemiBold.otf);
+}
+
+@font-face {
+    font-family: ArabicUIDisplayBold;
+    src: url(../fonts/Arabe/Arabic_UI_Text/ArabicUITextBold.otf);
+}
+
+@font-face {
+    font-family: EnglishInter;
+    src: url(../fonts/English/Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+@font-face {
+    font-family: ArabicUIDisplayMedium;
+    src: url(../fonts/Arabe/Arabic_UI_Text/ArabicUITextLight.otf);
+}
+
+
+/* shearing styles */
+
+.textCenter {
+    text-align: center;
+}
+
+.padding100 {
+    padding: 100px 0px;
+}
+
+.padding60 {
+    padding: 60px 0px;
+}
+
+button.solidBtn {
+    padding: 13px 28px;
+    background-color: #834BA4;
+    color: white !important;
+    border-radius: 22px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #834BA4;
+    font-family: ArabicUIDisplaySemiBold, EnglishInter, EnglishInter;
+}
+
+button.solidBtn:hover {
+    background-color: #582E80;
+}
+
+button.solidBtn1 {
+    padding: 13px 28px;
+    background-color: #582E80;
+    color: white !important;
+    border-radius: 22px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #582E80;
+    font-family: ArabicUIDisplaySemiBold, EnglishInter;
+}
+
+button.solidBtn1:hover {
+    background-color: #582e80f1;
+}
+
+button.solidBtn2 {
+    padding: 13px 28px;
+    background-color: #ffffff;
+    color: #834BA4 !important;
+    border-radius: 22px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #834BA4;
+    font-family: ArabicUIDisplaySemiBold, EnglishInter;
+}
+
+button.solidBtn2:hover {
+    background-color: #582E80;
+    color: white !important;
+    border: 2px solid #ffffff;
+}
+
+button.ligghtBtn {
+    padding: 13px 28px;
+    background-color: #834ba400;
+    color: white !important;
+    border-radius: 22px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    font-family: ArabicUIDisplaySemiBold, EnglishInter;
+}
+
+button.ligghtBtn:hover {
+    color: #582E80 !important;
+    border: 2px solid #582e8085;
+    background-color: white;
+}
+
+button.ligghtBtn:hover img {
+    filter: brightness(1)
+}
+
+.ligghtBtn img {
+    margin-inline-end: 12px;
+    filter: brightness(7.5)
+}
+
+ul li {
+    list-style: none;
+}
+
+.mt50 {
+    margin-top: 50px;
+}
+
+
+/* shearing styles */
+
+
+/* nav.navbar  *************************************************************************/
+
+nav.navbar {
+    background-color: white !important;
+    box-shadow: 0px 6px 12px #2c2a4a10;
+}
+
+ul.navbar-nav li.nav-item {
+    display: flex !important;
+    justify-items: center !important;
+}
+
+ul.navbar-nav li.nav-item a {
+    font-size: 15px;
+    color: #2C2A4A !important;
+    font-family: ArabicUIDisplayMedium, EnglishInter;
+    font-weight: 500;
+}
+
+ul.navbar-nav li.nav-item a img {
+    margin-inline-end: 12px;
+}
+
+ul.navbar-nav li.nav-item button.lang {
+    border: 2px solid #2C2A4A;
+    border-radius: 50%;
+    height: 38px;
+    width: 38px;
+    font-size: 15px;
+    color: #2C2A4A !important;
+    font-family: EnglishInter;
+    font-weight: 600;
+    background-color: white;
+    font-family: EnglishInter, ArabicUIDisplaySemiBold;
+}
+
+ul.navbar-nav li.nav-item a.experimShowBTN {
+    width: 126px;
+    height: 44px;
+    background-color: #834BA4;
+    color: white !important;
+    border-radius: 22px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 12px;
+    font-family: ArabicUIDisplaySemiBold, EnglishInter;
+}
+
+ul.mainUl li a:hover {
+    color: #834BA4 !important;
+}
+
+ul.mainUl li a.active {
+    color: #834BA4 !important;
+}
+
+@media only screen and (min-width: 991px) {
+    .tryMosry {
+        order: 1;
+    }
+
+    .refColor {
+        width: 25% !important;
+    }
+
+    ul.mainUl {
+        border-inline-start: 2px solid #D1D6DD;
+        writing-mode: horizontal-tb;
+        padding-inline-start: 4%;
+        margin-inline-start: 4%;
+    }
+
+    .iconlist {
+        width: 18%;
+    }
+}
+
+@media only screen and (min-width: 991px) {
+    button.ligghtBtn {
+        margin-inline-start: 15px;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    ul.navbar-nav li.nav-item a {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    ul.navbar-nav li.nav-item a.experimShowBTN {
+        width: 80px;
+        height: 30px;
+        font-size: 12px;
+        margin: 0px 5px;
+    }
+
+    .logo {
+        width: 80px !important;
+    }
+
+    ul.navbar-nav li.nav-item button.lang {
+        height: 28px;
+        width: 28px;
+        font-size: 13px;
+    }
+
+    .navbar-light .navbar-toggler-icon {
+        width: 20px;
+        height: 17px;
+    }
+
+    .navbar-light .navbar-toggler {
+        padding: 5px;
+        padding-bottom: 7px;
+    }
+
+    .partners h4 {
+        padding: 0px 18px !important;
+    }
+}
+
+
+/* nav.navbar  *************************************************************************/
+
+
+/* body  ******************************************************************************/
+
+.mainImg {
+    background-image: url(../Image/indexPage/homeImg.svg);
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 560px;
+}
+
+.mainHomePage label {
+    font-size: 24px;
+    color: #E9A7FF;
+    padding-inline-start: 24px !important;
+    font-family: ArabicUIDisplayMedium, EnglishInter;
+}
+
+.mainHomePage h4 {
+    font-size: 40px;
+    color: #ffffff;
+    /* padding-inline-start: 24px !important; */
+    font-family: ArabicUIDisplaySemiBold, EnglishInter;
+    width: 100%;
+    margin-top: 40px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.btnGroup {
+    margin-top: 45px;
+}
+
+.mainImg div.row {
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+}
+
+@media only screen and (max-width: 840px) {
+
+    button.solidBtn,
+    button.ligghtBtn,
+    .solidBtn2 {
+        padding: 13px 13px !important;
+        font-size: 13px;
+        width: 202px;
+        margin-top: 15px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .homeContent {
+        text-align: center;
+    }
+
+    .clientsList {
+        margin: 5px !important;
+        width: 120px !important;
+    }
+}
+
+@media only screen and (min-width: 767px) {
+    .w-40 {
+        width: 50%;
+    }
+}
+
+.cardsList {
+    border-bottom: 1px solid #D1D6DD;
+}
+
+.cardsList h4,
+.PointList h4 {
+    color: #2C2A4A;
+    font-size: 30px;
+    font-family: ArabicUIDisplayBold, EnglishInter;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.cardsList p,
+.PointList p {
+    color: #2C2A4A;
+    font-size: 18px;
+    font-family: ArabicUIDisplaySemiBold, EnglishInter;
+    padding: 0px 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.cardsList label,
+.PointList label {
+    color: #2C2A4A;
+    font-size: 15px;
+    font-family: ArabicUIDisplayMedium, EnglishInter;
+    padding-inline-start: 20px;
+    padding-inline-end: 20px;
+}
+
+.cardsCont {
+    width: 870px;
+}
+
+.p20 {
+    padding-inline-start: 20px;
+}
+
+.cardsCont .card {
+    min-height: 337px;
+    margin-bottom: 30px;
+    border-radius: 18px;
+    text-align: center;
+    padding: 40px 30px;
+}
+
+.cardsRow {
+    margin-top: 50px;
+}
+
+.cardGray {
+    background-color: #F4F5F6;
+    border: 0;
+    display: flex;
+    align-items: baseline;
+}
+
+.cardWhite {
+    background-color: #ffffff;
+    border: 0;
+}
+
+.imgbg1,
+.imgbg2 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgbg1 {
+    background-color: #834BA4;
+}
+
+.imgbg2 {
+    background-color: #582E80;
+}
+
+.arrowBGW,
+.arrowBGB {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrowBGW {
+    background-color: white;
+}
+
+.arrowBGB {
+    background-color: #F4F5F6;
+}
+
+.p30 {
+    padding: 30px 0px;
+}
+
+.PointList ul li {
+    margin: 24px 0px 0px 0px;
+}
+
+.PointList ul li img {
+    margin-inline-end: 15px;
+}
+
+.max176 {
+    max-width: auto !important;
+}
+
+.mstart {
+    margin-inline-end: 3%;
+}
+
+.padding5060leftBorder {
+    padding: 50px 60px;
+    border-start-end-radius: 20px;
+    border-end-end-radius: 20px;
+    max-height: 240px;
+}
+
+.padding5060rightBorder {
+    padding: 50px 60px;
+    border-end-start-radius: 20px;
+    border-start-start-radius: 20px;
+    max-height: 240px;
+}
+
+ul.numbersUl {
+    border-radius: 20px;
+    background-color: #834BA4;
+    margin: 0;
+    outline: 10px solid white;
+}
+
+ul.numbersUl li.iconlist {
+    padding: 50px !important;
+}
+
+ul.numbersUl li .PointList {
+    text-align: start;
+}
+
+ul.numbersUl li .PointList h4,
+ul.numbersUl li .PointList label,
+ul.numbersUl li .PointList p {
+    color: white !important;
+    font-family: ArabicUIDisplaySemiBold, EnglishInter;
+}
+
+ul.numbersUl li .PointList h4 {
+    margin: 15px 0px !important;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+@media only screen and (max-width: 991px) {
+    .mainHomePage h4 {
+        font-size: 26px;
+    }
+
+    ul.numbersUl li .PointList {
+        text-align: center !important;
+    }
+
+    ul.numbersUl li {
+        padding: 30px !important;
+    }
+}
+
+li.refColor {
+    background-color: #582E80;
+    padding: 50px 20px !important;
+}
+
+.clientsList {
+    background-color: #F4F5F6;
+    border-radius: 18px;
+    width: 170px;
+    height: 110px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+.personsImg {
+    max-height: 60px;
+    max-width: 60px;
+    border-radius: 50%;
+}
+
+.mySwiper .itemText {
+    padding: 40px;
+    background-color: #F4F5F6;
+    max-width: 720px;
+    border-radius: 15px;
+    margin: 0px 15px;
+}
+
+.mySwiper .PointList {
+    padding: 35px 0px;
+}
+
+.personsImgCont {
+    margin-top: -30px;
+}
+
+.persontInfo label {
+    font-size: 15px;
+    color: #2C2A4A;
+    font-family: ArabicUIDisplaySemiBold, EnglishInter;
+    padding: 11px 0px 5px 0px;
+    font-weight: bold;
+}
+
+.persontInfo p {
+    font-size: 12px;
+    color: #2C2A4A;
+    font-family: ArabicUIDisplayMedium, EnglishInter;
+}
+
+.swiper-pagination-bullet-active {
+    border: 1px solid #834BA4 !important;
+    background-color: #834BA4 !important;
+    width: 14px;
+    height: 14px;
+}
+
+.swiper-pagination-bullet {
+    border: 2px solid #D1D6DD;
+    background-color: white;
+    margin: 6px !important;
+    width: 14px;
+    height: 14px;
+}
+
+
+/* .swiper-pagination-bullet {
+    border: 1px solid #D1D6DD;
+    background-color: white;
+    margin: 6px !important;
+} */
+
+.swiper-button-prev {
+    background-image: url("../Image/indexPage/owlImgArow.svg") !important;
+    width: 38px;
+    height: 38px;
+    margin-top: -80px;
+}
+
+.swiper-button-next {
+    background-image: url("../Image/indexPage/owlImgArow2.svg") !important;
+    width: 38px;
+    height: 38px;
+    margin-top: -80px;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 0 !important;
+}
+
+@media only screen and (max-width: 500px) {
+    .swiper-pagination-bullet-active {
+        width: 10px;
+        height: 10px;
+    }
+
+    .swiper-pagination-bullet {
+        margin: 3px !important;
+        width: 10px;
+        height: 10px;
+    }
+
+    .mySwiper .itemText {
+        padding: 15px;
+    }
+
+    .cardsList label,
+    .PointList label {
+        padding: 0px !important;
+        font-size: 13px;
+    }
+}
+
+@media only screen and (min-width: 991px) {
+    .swiper-button-prev {
+        right: 80px !important;
+    }
+
+    .swiper-button-next {
+        left: 80px !important;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .swiper-button-prev {
+        right: 120px !important;
+    }
+
+    .swiper-button-next {
+        left: 120px !important;
+    }
+}
+
+.partners {
+    background-color: #F4F5F6;
+}
+
+.partners h4 {
+    background-color: #F4F5F6;
+    padding: 0px 40px;
+    z-index: 5555;
+}
+
+.partners hr {
+    background-color: #9aa5b6;
+    height: 2px;
+}
+
+
+/* boody  ******************************************************************************/
+
+
+/* footer */
+
+.footer_of_page {
+    background-color: #2C2A4A;
+    text-align: right;
+    padding-top: 60px;
+}
+
+.footer_of_page ul li.phone {
+    direction: initial;
+    text-align: center;
+}
+
+.footer_of_page ul li {
+    margin-bottom: 20px;
+    text-align: start;
+}
+
+.footer_of_page ul li a {
+    text-decoration: none;
+    font-family: EnglishInter, ArabicUIDisplayBold, EnglishInter;
+    color: white;
+}
+
+.footerlist3 img {
+    filter: brightness(5);
+}
+
+.footer_of_page ul li a:hover {
+    color: #834BA4;
+}
+
+.footer_of_page ul {
+    margin-top: 15px;
+    padding: 0;
+}
+
+.footer_of_page h5 {
+    color: white;
+    color: white;
+    font-family: EnglishInter, ArabicUIDisplayBold, EnglishInter;
+    padding-bottom: 10px;
+    text-align: start;
+}
+
+.footer_of_page hr {
+    color: white;
+}
+
+.footer_of_page .footerPadding {
+    padding: 0;
+}
+
+ul.social li {
+    display: inline;
+    margin-left: 5%;
+}
+
+ul.social {
+    padding-left: 0px;
+}
+
+.footerBottom span {
+    color: #ffffff;
+    font-family: EnglishInter, ArabicUIDisplayBold, EnglishInter;
+    text-align: center;
+    font-size: 16px;
+}
+
+.footerBottom {
+    border-top: 1px solid #222040;
+}
+
+.footerBottomwhhite img {
+    filter: opacity(0.6);
+}
+
+.footerBottomwhhite {
+    border-top: 1px solid #D1D6DD;
+}
+
+.footerBottomwhhite1 {
+    border-top: 1px solid #D1D6DD;
+}
+
+.footerBottomwhhite2 img {
+    filter: opacity(0.6);
+}
+
+.footerBottomwhhite2 {
+    border-top: 1px solid #D1D6DD !important;
+}
+
+.footerBottomwhhite2 label {
+    color: #2C2A4A !important;
+}
+
+.footerLogo {
+    text-align: start;
+}
+
+.footerLogo label {
+    color: white;
+    text-align: start !important;
+    margin-top: 30px;
+}
+
+.footerPadding ul li.title {
+    color: white;
+    font-weight: 700;
+    font-family: ArabicUIDisplaySemiBold, EnglishInter;
+    font-size: 15px !important;
+}
+
+.footerPadding ul li a {
+    color: white;
+    font-family: ArabicUIDisplayMedium, EnglishInter;
+    font-size: 13px;
+}
+
+.footerPadding img {
+    margin-inline-end: 12px;
+}
+
+@media only screen and (min-width: 767px) {
+    .footerlist {
+        width: 35%
+    }
+
+    .footerlist2 {
+        width: 20%;
+    }
+
+    .footerlist3 {
+        width: 20%;
+    }
+
+    .footerlist4 {
+        width: 15%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .footerlist {
+        width: 100%
+    }
+
+    .footerlist2 {
+        width: 100%;
+    }
+
+    .footerlist3 {
+        width: 100%;
+    }
+
+    .footerlist4 {
+        width: 100%;
+    }
+
+    .footer_of_page ul {
+        margin-top: 0px !important;
+        padding-left: 0px;
+    }
+
+    .footerBottom {
+        padding: 5px 0px !important;
+    }
+
+    .footerBottomwhhite {
+        padding: 5px 0px !important;
+    }
+
+    .formContsGreen {
+        border: 3px solid #24BC57;
+        border-radius: 18px;
+        padding: 30px 10px !important;
+        margin-bottom: 30px;
+    }
+
+    .formContsGreen img {
+        margin-inline-end: 10px !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .footer_of_page {
+        padding-top: 15px !important;
+    }
+
+    .footer_of_page h5 {
+        padding-bottom: 0px !important;
+    }
+
+    .footer_of_page ul {
+        margin-top: 0px !important;
+        padding-inline-end: 20px;
+    }
+
+    .footer_of_page {
+        padding: 0px 25px;
+    }
+
+    .footerLogo label {
+        margin-bottom: 30px !important;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .footer_of_page h5 {
+        font-size: 12px;
+    }
+
+    .footer_of_page ul li {
+        font-size: 10px;
+    }
+
+    .footer_of_page h5 {
+        font-size: 12px;
+    }
+
+    .footer_of_page ul li {
+        font-size: 8px !important;
+    }
+
+    .footer_of_page {
+        padding-top: 50px !important;
+    }
+
+    .footer_of_page h5 {
+        padding-bottom: 0px !important;
+    }
+
+    .footer_of_page ul {
+        margin-top: 0px !important;
+    }
+
+    .footer_of_page ul li {
+        list-style: none;
+        margin-bottom: 5px;
+    }
+
+    .footerBottom span {
+        font-size: 12px !important;
+    }
+
+    .footerBottomwhhite span {
+        font-size: 12px !important;
+    }
+}
+
+@media only screen and (min-width: 767px) {
+    .footer_of_page {
+        padding-inline-start: 20px;
+        padding-inline-end: 20px;
+    }
+}
+
+ul.buy li {
+    margin: 0px 10px;
+}
+
+.allSave {
+    font-size: 13px;
+    color: white;
+    font-family: ArabicUIDisplayMedium, EnglishInter;
+    text-align: start;
+    padding: 15px 0px;
+}
+
+.allSavewhite {
+    font-size: 13px;
+    color: #2C2A4A;
+    font-family: ArabicUIDisplayMedium, EnglishInter;
+    text-align: start;
+    padding: 15px 0px;
+}
+
+.allSave a {
+    font-size: 12px;
+    color: #E9A7FF;
+    font-family: EnglishInter;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.allSavewhite a {
+    font-size: 12px;
+    color: #E9A7FF;
+    font-family: EnglishInter;
+    text-decoration: none;
+    font-weight: bold;
+    padding-inline-start: 5px;
+}
+
+
+/* footer */
+
+
+/* page 2  مميزات مسيرة */
+
+.topcolor {
+    height: 40px;
+    background-color: #582E80;
+}
+
+.propList {
+    border-radius: 9px;
+    border: 1px solid #D1D6DD;
+    display: flex;
+    align-items: center;
+    height: 49px;
+    padding: 0px 16px;
+    color: #2C2A4A;
+    font-size: 13px;
+    font-family: ArabicUIDisplayMedium, EnglishInter;
+}
+
+.propList img {
+    margin-inline-end: 12px;
+}
+
+
+/* page 2  مميزات مسيرة */
+
+
+/* Custom style */
+
+
+/* page 3  الاسعار */
+
+.typeCards {
+    border: 1px solid #D1D6DD;
+    border-radius: 18px;
+    background-color: #ffffff !important;
+    padding-bottom: 8px;
+    position: relative;
+}
+
+.bgGray {
+    background-color: #F4F5F6 !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: rgba(255, 0, 0, 0);
+    color: #2C2A4A !important;
+}
+
+.accordion-button {
+    color: #2C2A4A;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #ffffff00 !important;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.accordion-button:focus {
+    z-index: 3;
+    border-color: #86b6fe00;
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgba(255, 0, 0, 0);
+}
+
+.w222 {
+    width: 222px !important;
+}
+
+.typeCards .cardListProp {
+    padding: 55px 20px 45px 20px;
+}
+
+.cardListProp h4 {
+    color: #582E80;
+    font-size: 18px;
+    font-family: ArabicUIDisplaySemiBold, EnglishInter;
+}
+
+.cardListProp h2 {
+    color: #582E80;
+    font-size: 40px !important;
+}
+
+.cardListProp label {
+    color: #2C2A4A;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    font-family: ArabicUIDisplayMedium, EnglishInter;
+}
+
+.cardListProp label span {
+    font-weight: 500;
+}
+
+.cardListProp button {
+    margin: 24px 0px;
+}
+
+.accordion-button button {
+    color: red !important;
+    width: 200px !important;
+    background-color: red !important;
+}
+
+.accordion-collapse {
+    padding: 24px 24px;
+}
+
+.accordion-collapse label {
+    font-size: 13px;
+    color: #2C2A4A;
+}
+
+.accordion-collapse label.users {
+    font-weight: 500;
+    /* margin-inline-start: 18%; */
+    text-align: start;
+}
+
+.accordion-collapse img {
+    margin-inline-end: 12px;
+}
+
+.accordion-buttonLable {
+    width: 120px;
+    text-align: start;
+}
+
+.lastItem {
+    border-bottom: 0 !important;
+    box-shadow: none !important;
+}
+
+.topCardTitle {
+    background-color: #2C2A4A;
+    color: white;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 7px 13px;
+}
+
+.blacolor {
+    color: #2C2A4A !important;
+}
+
+.formConts {
+    border: 1px solid #D1D6DD;
+    border-radius: 18px;
+    padding: 50px 30px;
+}
+
+.formContsGreen {
+    border: 3px solid #24BC57;
+    border-radius: 18px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.conectlist {
+    border-top: 1px solid #D1D6DD;
+    border-bottom: 1px solid #D1D6DD;
+    padding: 24px 0px;
+}
+
+.conForm {
+    padding: 30px 0px;
+}
+
+.conForm input,
+textarea {
+    background-color: #F4F5F6 !important;
+    color: #2C2A4A;
+    font-size: 13px !important;
+    border-radius: 9px !important;
+    border: 0 !important;
+    font-family: ArabicUIDisplayMedium, EnglishInter;
+}
+
+.conForm input {
+    height: 48px;
+}
+
+.conForm textarea {
+    height: 200px;
+    padding: 15px;
+}
+
+.codeCom label {
+    font-size: 12px;
+    padding: 4px;
+    color: #777E90;
+}
+
+.codeCom label.engname {
+    color: #2C2A4A;
+}
+
+.formContsGreen img {
+    margin-inline-end: 30px;
+}
+
+.formContsGreen h4 {
+    color: #24BC57;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.formContsGreen label {
+    color: #24BC57;
+    font-size: 15px;
+}
+
+.btn-check:checked+.btn-outline-primary .trueBG {
+    background-color: #834ba4b9 !important;
+    background-image: url('../Image/page2/whitetrue.svg') !important;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.trueBG {
+    right: 0;
+    border-radius: 9px;
+}
+
+.conForm .btn-outline-primary {
+    background-color: #F4F5F6 !important;
+    border: none;
+    border-radius: 9px;
+    min-height: 156px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    width: auto;
+}
+
+@media only screen and (min-width: 1200px) {
+    .conForm .btn-outline-primary {
+        width: 132px;
+    }
+}
+
+.selectList h4 {
+    color: #2C2A4A;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.selectList h2 {
+    color: #2C2A4A;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.selectList label {
+    color: #2C2A4A;
+    font-size: 13px;
+}
+
+.whithInputForm input {
+    background-color: white !important;
+    border: 1px solid #D1D6DD !important;
+}
+
+.whithInputForm .form-label {
+    color: #2C2A4A;
+    font-size: 13px;
+}
+
+.backGgtay {
+    background-color: #F4F5F6;
+}
+
+.backGgtay2 {
+    background-color: #ffffff;
+}
+
+.backGgWhite {
+    background-color: #ffffff;
+    border: none !important;
+}
+
+.footertopBorder {
+    border-top: 1px solid #707070 !important;
+}
+
+.formHead h4 {
+    font-size: 18px;
+    color: #2C2A4A;
+    font-weight: 500;
+}
+
+.formHead label {
+    font-size: 15px;
+    color: #E53835;
+    font-weight: bold;
+}
+
+
+/* .accordion-button {
+    box-shadow: none;
+    border-bottom: 1px solid rgb(0 0 0 / 13%) !important;
+} */
+
+
+/* page 3  الاسعار */
+
+
+/* login page  */
+
+.loginImg {
+    background-image: url("../Image/login.png");
+    background-size: cover;
+    height: 672px !important;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.footerContent {
+    background-color: #582E80;
+    height: 100px;
+}
+
+.loginForm form {
+    width: 350px !important;
+}
+
+.loginForm form input {
+    border: 0;
+    background-color: #F4F5F6;
+    border-radius: 24px;
+    height: 48px;
+    font-size: 13px;
+    color: #2C2A4A;
+    padding-inline-start: 45px;
+}
+
+.loginForm form img {
+    margin-top: -32px;
+    margin-inline-start: 20px;
+}
+
+.loginForm form a {
+    font-size: 15px;
+    color: #582E80;
+    font-family: ArabicUIDisplayMedium, EnglishInter;
+}
+
+.loginForm h4 {
+    font-size: 24px !important;
+}
+
+.loginForm label {
+    font-size: 15px;
+    color: #777E90 !important;
+    font-family: ArabicUIDisplayMedium, EnglishInter;
+    padding-top: 5px;
+}
+
+@media only screen and (max-width: 767px) {
+    .loginForm {
+        padding-top: 80px;
+    }
+}
+
+.errorPgae label {
+    font-size: 15px;
+    color: #2C2A4A;
+}
+
+.errorPgae h4 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2C2A4A;
+}
+
+.matbuton {
+    margin-bottom: 20%;
+}
+
+img.iconsVAlidationT {
+    width: 18px;
+}
+
+img.iconsVAlidationF,
+img.iconsVAlidationT {
+    margin-top: -32px !important;
+    margin-inline-start: 92.5% !important;
+    display: none;
+}
+
+img.icons {
+    filter: grayscale(1);
+}
+
+.form-control.is-invalid,
+.was-validated .form-control:invalid {
+    background: none;
+    border: 2px solid #E53835 !important;
+    padding-inline-start: 45px;
+    color: #E53835 !important;
+}
+
+.form-control.is-invalid,
+.was-validated .form-control:invalid~img.iconsVAlidationF {
+    display: block !important;
+}
+
+.form-control.is-valid,
+.was-validated .form-control:valid {
+    background: none;
+    border: 2px solid #777E90;
+    padding-inline-start: 45px;
+    color: #2C2A4A !important;
+}
+
+.form-control.is-invalid,
+.was-validated .form-control:invalid~img.icons {
+    filter: grayscale(0) !important;
+}
+
+.form-control.is-valid,
+.was-validated .form-control:valid~img.iconsVAlidationT {
+    display: block !important;
+}
+
+
+/* login page  */
+
+
+/* login page  */
+
+.loginForm input:focus {
+    box-shadow: none;
+    border: 2px solid #777E90;
+    outline: 0 !important;
+}
+
+.conForm input {
+    padding-inline-start: 15px !important;
+}
+
+.conForm input:focus {
+    box-shadow: none;
+    outline: 0 !important;
+    border: 2px solid #777E90 !important;
+}
+
+.conForm textarea:focus {
+    box-shadow: none;
+    border: 2px solid #777E90 !important;
+    box-shadow: none;
+    outline: 0 !important;
+}
+
+.conForm .form-control.is-invalid,
+.was-validated .form-control:invalid {
+    background: white !important;
+    border: 2px solid #E53835;
+    padding-inline-start: 45px;
+    color: #E53835 !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+button.collapsed label.MORE {
+    display: block;
+}
+
+button.collapsed label.LESR {
+    display: none;
+}
+
+label.MORE img {
+    margin-inline-start: 12px !important;
+}
+
+label.LESR img {
+    margin-inline-start: 12px !important;
+}
+
+.accordion-button::after {
+    background: none !important;
+    background-image: none !important;
+    width: 0;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background: none !important;
+    background-image: none !important;
+    width: 0;
+}
+
+.accordion-button {
+    height: 62px;
+}
+
+.accordion-item {
+    border-radius: 9px !important;
+}
+
+.accordion-item label {
+    color: #834BA4;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.collapsed label {
+    color: #2C2A4A !important;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.accordion-collapse {
+    color: #2C2A4A;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 20px 30px;
+}
+
+.accordion {
+    /* width: 100%; */
+    /* width: 630px; */
+}
+
+@media only screen and (max-width: 600px) {
+
+    .accordion-item label,
+    .collapsed label,
+    .accordion-collapse {
+        font-size: 12px;
+    }
+
+    .accordion-button {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+}
+
+.AnyQus {
+    margin-top: 30px;
+}
+
+.AnyQus h5 {
+    font-size: 18px;
+    color: #2C2A4A;
+    font-weight: 500;
+}
+
+.AnyQus label {
+    font-size: 15px;
+    color: #2C2A4A;
+    font-weight: 400;
+    max-width: 500px;
+    margin-top: 20px;
+}
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+    left: 10pxs !important;
+    right: auto;
+}
+
+label.MORE {
+    font-size: 12px;
+    color: #777E90 !important;
+    display: none;
+}
+
+label.LESR {
+    font-size: 12px;
+    color: #777E90 !important;
+    display: block;
+}
