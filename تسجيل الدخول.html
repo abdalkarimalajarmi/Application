@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./Css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./Css/Swiper.css" />
+
+    <link href="./Css/allCssFile.css" rel="stylesheet" />
+    <link href="./Css/qus.css" rel="stylesheet" />
+
+    <title>تسجيل الدخول</title>
+  </head>
+
+  <body class="direction-rtl">
+    <div class="allProject d-flex justify-content-center">
+      <div class="container-fluid PageContainer p-0 m-0">
+        <!--  nav_of_page  -->
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+              <img class="logo" src="./Image/indexPage/logo.svg" />
+            </a>
+            <ul class="navbar-nav mb-2 mb-lg-0 tryMosry d-flex">
+              <li class="nav-item d-flex align-items-center">
+                <a
+                  class="nav-link d-none d-lg-block"
+                  aria-current="page"
+                  href="#"
+                >
+                  <img src="./Image/indexPage/selfService.svg" /> الخدمات
+                  الذاتية
+                </a>
+              </li>
+              <li class="nav-item d-flex align-items-center">
+                <a
+                  class="nav-link d-none d-lg-block"
+                  aria-current="page"
+                  href="التسجيل خدمة الموظفين.html"
+                >
+                  <img src="./Image/indexPage/login.svg" /> دخول المشتركين
+                </a>
+              </li>
+              <li class="nav-item p-0 d-flex align-items-center">
+                <a class="nav-link experimShowBTN" aria-current="page" href="#">
+                  عرض تجريبي
+                </a>
+                <button class="lang disNone" id="AR" onclick="changeToRTL()">
+                  Ar
+                </button>
+                <button class="lang disBlock" id="EN" onclick="changeToLTR()">
+                  En
+                </button>
+              </li>
+            </ul>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mb-2 mb-lg-0 mainUl">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html"
+                    >الرئيسية</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="مميزات مسيرة.html">مميزات النظام</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="الاسعار.html"> الاسعار </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="الاسئلة الشائعة.html">
+                    الاسئلة الشائعة
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="تواصل معنا.html"> اتصل بنا </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!--  nav_of_page  -->
+        <!-- body_of_page -->
+        <section class="body_of_page p-0 m-0">
+          <div class="container-fluid p-0">
+            <div class="row m-0 p-0">
+              <div
+                class="d-none d-md-flex col-md-6 loginImg h-100 position-relative p-0"
+              >
+                <!-- <img class="img-fluid w-100 position-absolute" src="./Image/login.png"> dsvsdv -->
+                <footer
+                  class="justify-content-around w-100 h-100 position-absolute align-items-end"
+                >
+                  <div class="d-flex align-items-end h-100">
+                    <div
+                      class="footerContent w-100 d-flex justify-content-center align-items-center"
+                    >
+                      <div>
+                        <div class="allSave p-1">جميع الحقوق محفوظة 2022 ©</div>
+                        <div class="allSave p-1">
+                          مُسيّر أحد مشاريع <a href="#">Cloud Systems</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </footer>
+              </div>
+              <div
+                class="col-12 col-md-6 d-flex justify-content-center align-items-center"
+              >
+                <div class="loginForm w-100">
+                  <div class="col-12 textCenter PointList">
+                    <h4 class="mb-2">تسجيل الدخول</h4>
+                    <label class="mb-4">
+                      يرجى إدخال بياناتك الخاصة بنظام مُسيّر
+                    </label>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <form class="needs-validation" novalidate>
+                      <div class="mb-3 position-relative">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="exampleFormControlInput1"
+                          placeholder="  اسم المستخدم"
+                          required
+                        />
+                        <img
+                          src="./Image/user.svg"
+                          class="position-absolute icons"
+                        />
+                        <img
+                          src="./Image/errorVa.svg"
+                          class="position-absolute iconsVAlidationF"
+                        />
+                        <img
+                          src="./Image/trueVald.svg"
+                          class="position-absolute iconsVAlidationT"
+                        />
+                      </div>
+                      <div class="mb-3 position-relative">
+                        <input
+                          type="password"
+                          class="form-control"
+                          id="exampleFormControlInput1"
+                          placeholder="كلمة المرور"
+                          required
+                        />
+
+                        <img
+                          src="./Image/pass.svg"
+                          class="position-absolute icons"
+                        />
+                        <img
+                          src="./Image/errorVa.svg"
+                          class="position-absolute iconsVAlidationF"
+                        />
+                        <img
+                          src="./Image/trueVald.svg"
+                          class="position-absolute iconsVAlidationT"
+                        />
+                      </div>
+
+                      <div class="btnGroup mt-4 p-0 textCenter">
+                        <button
+                          class="solidBtn w-100 d-inline mb-3"
+                          type="submit"
+                        >
+                          تسجيل الدخول
+                        </button>
+
+                        <a href="نسيت كلمة المرور.html">نسيت كلمة المرور</a>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- body_of_page -->
+      </div>
+    </div>
+
+    <script src="./Js/bootstrap.min.js "></script>
+    <script src="./Js/jquery.min.js "></script>
+    <script src="./Js/popperjs.js "></script>
+    <script src="./Js/all.min.js "></script>
+    <script src="./Js/Swiper.js "></script>
+    <script src="./Js/index.js"></script>
+  </body>
+</html>
