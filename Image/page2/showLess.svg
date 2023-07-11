@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="72" height="17" viewBox="0 0 72 17">
+  <g id="Component_48_13" data-name="Component 48 – 13" transform="translate(0 1)">
+    <text id="عرض_أقل" data-name="عرض أقل" transform="translate(24 12)" fill="#777e90" font-size="12" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">عرض أقل</tspan></text>
+    <path id="minus-solid" d="M27.077,225.848H16.923a.924.924,0,0,1,0-1.848H27.077a.924.924,0,0,1,0,1.848Z" transform="translate(-16 -217)" fill="#777e90"/>
+  </g>
+</svg>

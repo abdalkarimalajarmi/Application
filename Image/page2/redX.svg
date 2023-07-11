@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g id="Group_2185" data-name="Group 2185" transform="translate(-896 -979)">
+    <rect id="Rectangle_432" data-name="Rectangle 432" width="16" height="16" transform="translate(896 979)" fill="#e53835" opacity="0"/>
+    <path id="xmark-solid" d="M11.647,105.928a1.2,1.2,0,1,1-1.7,1.7L6,103.674l-3.951,3.948a1.2,1.2,0,0,1-1.7-1.7L4.3,101.974.352,98.023a1.2,1.2,0,1,1,1.7-1.7L6,100.281l3.952-3.952a1.2,1.2,0,0,1,1.7,1.7L7.7,101.977Z" transform="translate(898 885.025)" fill="#e53835"/>
+  </g>
+</svg>

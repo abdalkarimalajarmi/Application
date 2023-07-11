@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="85" height="17" viewBox="0 0 85 17">
+  <g id="Component_49_10" data-name="Component 49 – 10" transform="translate(0 1)">
+    <path id="plus-solid" d="M28,54a.923.923,0,0,1-.923.923H22.923v4.154a.923.923,0,0,1-1.846,0V54.923H16.923a.923.923,0,1,1,0-1.846h4.154V48.923a.923.923,0,1,1,1.846,0v4.154h4.154A.922.922,0,0,1,28,54Z" transform="translate(-16 -46)" fill="#777e90"/>
+    <text id="عرض_المزيد" data-name="عرض المزيد" transform="translate(24 12)" fill="#777e90" font-size="12" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">عرض المزيد</tspan></text>
+  </g>
+</svg>

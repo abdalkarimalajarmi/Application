@@ -1,0 +1,7 @@
+<svg id="Component_38_3" data-name="Component 38 – 3" xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38">
+  <g id="Ellipse_63" data-name="Ellipse 63" fill="#fff" stroke="#d1d6dd" stroke-width="2">
+    <circle cx="19" cy="19" r="19" stroke="none"/>
+    <circle cx="19" cy="19" r="18" fill="none"/>
+  </g>
+  <path id="arrow-left-long-solid" d="M15.714,100.318l-4-4A1,1,0,0,0,10.3,97.732l2.291,2.292H1.007a1,1,0,0,0,0,2H12.591L10.3,104.317a1,1,0,0,0,1.414,1.414l4-4A1,1,0,0,0,15.714,100.318Z" transform="translate(10.993 -82.025)" fill="#2c2a4a"/>
+</svg>
